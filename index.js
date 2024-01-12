@@ -30,3 +30,10 @@ dropdownList.forEach((elem) => {
 })
 })
 
+
+const burgerMenu = document.querySelector('.burger-menu');
+const navBlock = document.querySelector('.nav-block');
+
+burgerMenu.addEventListener('click', () => {
+  navBlock.classList.toggle('nav-block--active')
+})

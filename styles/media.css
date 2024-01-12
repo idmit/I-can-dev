@@ -1,0 +1,101 @@
+@media (width <= 1024px) {
+
+  .header {
+    background-color: #1F497B;
+  }
+
+  .logo-block {
+    height: 72px;
+    padding: 3px 20px 0;
+  }
+
+  .nav-block {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 72px;
+    z-index: 150;
+    height: fit-content;
+    padding: 0 20px;
+    transform: translateY(-100%);
+    transition: all .3s;
+  }
+
+  .nav-block--active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-basket, 
+  .logo-number,
+  .logo-link {
+    display: none;
+  }
+
+  .header-basket {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .logo-form {
+    max-width: 697px;
+    width: 100%;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .logo-search {
+    width: 100%;
+  }
+
+  .logo-title {
+    margin-right: 42px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    height: 217px;
+    gap: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    padding: 9px 0 10px 16px;
+  }
+
+  .nav-link {
+    font-weight: bold;
+  }
+
+  .wrapper {
+    padding: 16px 20px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
+  }
+
+  .first-card {
+    grid-column: 1 / 3;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .price-select {
+    display: none;
+  }
+
+  .filter-block {
+    justify-content: space-between;
+  }
+
+}

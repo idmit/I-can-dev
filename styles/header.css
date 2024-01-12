@@ -19,6 +19,11 @@
   color: #ffffff;
 }
 
+.burger-menu {
+  margin-right: 41px;
+  height: 24px;
+}
+
 .logo-number {
   color: #ffffff;
   margin-right: 86px;
@@ -50,6 +55,10 @@
   padding-left: 21px;
   font-size: 16px;
   font-family: PT Sans;
+}
+
+.header-basket {
+  display: none;
 }
 
 .logo-search::placeholder {
