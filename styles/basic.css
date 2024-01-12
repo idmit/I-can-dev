@@ -22,5 +22,9 @@ ul {
 }
 
 .wrapper {
-  padding: 0 86px;
+  padding: 25px 86px;
 }
+
+/* select {
+  appearance: none;
+} */
