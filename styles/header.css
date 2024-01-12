@@ -32,9 +32,6 @@
 
 .form-btn {
   position: absolute;
-  background-color: transparent;
-  border: none;
-  outline: none;
   padding: 0;
 }
 
@@ -43,10 +40,13 @@
   align-items: center;
   background-color: transparent;
   border: none;
+  outline: none;
+  color: #ffffff;
   border-bottom: 1px solid #517DAE;
   width: 281px;
   height: 22px;
   padding-left: 21px;
+  font-size: 16px;
 }
 
 .logo-search::placeholder {
