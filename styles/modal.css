@@ -1,0 +1,115 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(41, 41, 41, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--show {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+}
+
+.modal-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 21px 18px 19px;
+  gap: 19px;
+  background-color: #fff;
+}
+
+.dropdown-select-modal {
+  padding: 7px 16px;
+  background-color: white;
+  border: 1px solid #D0D0D0;
+  width: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.price-modal {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+}
+
+.price-search-modal {
+  padding: 14px 10px 13px 26px;
+  text-align: right;
+  border: 1px solid #d0d0d0;
+  width: 244px;
+  height: 48px;
+  font-family: PT Sans;
+  outline: none;
+}
+
+.price-search-modal::placeholder {
+  color: #484848;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.price-block-modal {
+  position: relative;
+}
+
+.price-select-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.modal-close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+.modal-btn {
+  padding: 14px 0 13px;
+  background-color: #FF3D3D;
+  color: #fff;
+}
+
+.dropdown--active {
+  border-bottom: hidden;
+}
+
+.dropdown-list--active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+
+.item-type-modal {
+  width: 100%;
+}
+
+.item-type-modal::before {
+  display: none;
+}
+
+.item-brand-modal::before {
+  display: none;
+}
+
+.dropdown-list-modal {
+  width: 244px;
+}

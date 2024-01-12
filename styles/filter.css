@@ -3,6 +3,14 @@
   align-items: center;
 }
 
+.filter-title {
+  display: none;
+}
+
+.filter-btn {
+  display: none;
+}
+
 .select {
   width: 264px;
   height: 48px;
@@ -61,13 +69,10 @@
 }
 
 
-
-
 .dropdown {
   width: 264px;
   position: relative;
   margin-right: 14px;
-
 }
 
 .dropdown-select {

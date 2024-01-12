@@ -1,5 +1,5 @@
-@media (width <= 1024px) {
 
+@media (width <= 1090px) {
   .header {
     background-color: #1F497B;
   }
@@ -43,6 +43,7 @@
   .logo-form {
     max-width: 697px;
     width: 100%;
+    margin-right: 41px;
   }
 
   .burger-menu {
@@ -97,5 +98,18 @@
   .filter-block {
     justify-content: space-between;
   }
+
+  .filter-title {
+    display: block;
+  }
+
+  .filter-btn {
+    display: block;
+  }
+}
+
+@media (width <= 768px) {
+
+  
 
 }
