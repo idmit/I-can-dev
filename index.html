@@ -90,19 +90,48 @@
       <main class="main" aria-label="main">
         <div class="wrapper">
           <section class="filter-block" id="filter">
-            <select id="logo-select" name="logo" class="select">
+            <div class="dropdown">
+              <div class="dropdown-select select">
+                <span class="selected-item">Любого логотипа</span>
+                <img src="assets/icons/arrow.svg" alt="arrow svg">
+              </div>
+              <div class="dropdown-list">
+                <div class="dropdown-list__item item-type">Компакт-камера</div>
+                <div class="dropdown-list__item item-type">Беззеркальная</div>
+                <div class="dropdown-list__item item-type">Зеркальная</div>
+                <div class="dropdown-list__item item-type">Среднеформатная</div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown-select select">
+                <span class="selected-item">Любого бренда</span>
+                <img src="assets/icons/arrow.svg" alt="arrow svg">
+              </div>
+              <div class="dropdown-list">
+                <div class="dropdown-list__item item-brand">Canon</div>
+                <div class="dropdown-list__item item-brand">Nikon</div>
+                <div class="dropdown-list__item item-brand">Sony</div>
+                <div class="dropdown-list__item item-brand">Fujifilm</div>
+                <div class="dropdown-list__item item-brand">Samsung</div>
+                <div class="dropdown-list__item item-brand">Olympus</div>
+              </div>
+            </div>
+
+
+            <!-- <select id="logo-select" name="logo" class="select">
               <option selected disabled>Любого логотипа</option>
               <option>Компакт-камера</option>
               <option>Беззеркальная</option>
               <option>Зеркальная</option>
               <option>Среднеформатная</option>
-            </select>
-            <select class="select">
+            </select> -->
+            <!-- <select class="select">
               <option selected disabled>Любого бренда</option>
               <option>Компакт-камера</option>
               <option>Беззеркальная</option>
               <option>Среднеформатная</option>
-            </select>
+            </select> -->
             <div class="price-select">
               <span class="price-select-text">ПО ЦЕНЕ</span>
               <div class="price-search-block">
@@ -309,5 +338,8 @@
         </div>
       </main>
     </div>
+
+    
+    <script src="index.js"></script>
   </body>
 </html>
