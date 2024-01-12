@@ -1,11 +1,11 @@
 const dropdown = document.querySelectorAll('.dropdown-select');
-
 const dropdownModal = document.querySelectorAll('.dropdown-select-modal');
-
-
+const cardList = document.querySelectorAll('.card');
 const dropdownList = document.querySelectorAll('.dropdown-list');
-
 const selectedItem = document.querySelectorAll('.selected-item');
+
+const mobileSearchBtn = document.querySelector('.mobile-search-btn');
+const logoForm = document.querySelector('.logo-form')
 
 dropdown[0].addEventListener('click', () => {
   dropdown[0].classList.toggle('dropdown--active');
@@ -35,22 +35,25 @@ dropdownList.forEach((elem) => {
       dropdown[0].classList.remove('dropdown--active');
       dropdownList[0].classList.remove('dropdown-list--active');
     }
+
     if (e.target.classList.contains('item-brand')) {
       selectedItem[1].textContent = e.target.textContent;
       dropdown[1].classList.remove('dropdown--active');
       dropdownList[1].classList.remove('dropdown-list--active');
     }
+
     if (e.target.classList.contains('item-type-modal')) {
       selectedItem[2].textContent = e.target.textContent;
-      dropdownModal[0].classList.remove('dropdown--active');
-      dropdownList[2].classList.remove('dropdown-list--active');
+      dropdownModal.forEach(el => el.classList.remove('dropdown--active'))
+      dropdownList.forEach(el => el.classList.remove('dropdown-list--active'))
     }
+
     if (e.target.classList.contains('item-brand-modal')) {
       selectedItem[3].textContent = e.target.textContent;
-      dropdownModal[1].classList.remove('dropdown--active');
-      dropdownList[3].classList.remove('dropdown-list--active');
+      dropdownModal.forEach(el => el.classList.remove('dropdown--active'))
+      dropdownList.forEach(el => el.classList.remove('dropdown-list--active'))
     }
- })
+})
 })
 
 const closeDropdown = () => {
@@ -59,6 +62,11 @@ const closeDropdown = () => {
   dropdownModal[1].classList.remove('dropdown--active');
   dropdownList[3].classList.remove('dropdown-list--active');
 }
+
+
+mobileSearchBtn.addEventListener('click', () => {
+  logoForm.classList.toggle('logo-form--active')
+})
 
 
 const burgerMenu = document.querySelector('.burger-menu');

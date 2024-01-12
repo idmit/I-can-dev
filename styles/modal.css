@@ -111,5 +111,11 @@
 }
 
 .dropdown-list-modal {
+  height: 190px;
   width: 244px;
+  overflow: auto;
+}
+
+.hidden {
+  display: none;
 }

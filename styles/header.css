@@ -123,6 +123,10 @@
   transition: .3s all;
 }
 
+.mobile-search-btn {
+  display: none;
+}
+
 
 @media (hover: hover) {
 
